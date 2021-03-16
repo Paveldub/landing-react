@@ -1,4 +1,4 @@
 # webpack 5
-@emotion for styles <br/>
+@emotion aka styled components <br/>
 react icons <br/>
 react scroll <br/>
