@@ -1,0 +1,19 @@
+@use "variables";
+@use "fonts";
+
+body {
+  margin: 0;
+  font-family: 'Proxima nova',
+  sans-serif;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-size: 35px;
+}
