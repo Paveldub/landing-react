@@ -1,11 +1,11 @@
-import styled from '@emotion/styled';
-import { Link as LinkRouter } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
+import styled from "@emotion/styled";
+import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,11 +105,11 @@ export const NavBtnLink = styled(LinkRouter)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }

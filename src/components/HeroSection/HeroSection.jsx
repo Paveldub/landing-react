@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import Video from '../../video/video.mp4';
+import React, { useState } from "react";
+import { Button } from "../Common/Button/Button.styles";
+import Video from "../../video/video.mp4";
 
 import {
   HeroContainer,
@@ -9,10 +10,9 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  Button,
   ArrowRight,
   ArrowForward,
-} from './HeroSection.styles';
+} from "./HeroSection.styles";
 
 export const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -31,10 +31,15 @@ export const HeroSection = () => {
           <HeroH1>Why React is awesome?</HeroH1>
           <HeroP>Try it</HeroP>
           <HeroBtnWrapper>
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-              Get started
-              {' '}
-              {hover ? <ArrowForward /> : <ArrowRight />}
+            <Button
+              primary="true"
+              dark="false"
+              big="true"
+              to="signup"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+            >
+              Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

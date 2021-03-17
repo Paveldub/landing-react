@@ -1,7 +1,8 @@
-import './styles/index.scss';
-import { Navbar } from './components/NavBar/NavBar';
-import { Sidebar } from './components/Sidebar/Sidebar';
-import { Home } from './pages/Home';
+import React from "react";
+import "./styles/index.scss";
+import { Navbar } from "./components/NavBar/NavBar";
+import { Sidebar } from "./components/Sidebar/Sidebar";
+import { Home } from "./pages/Home";
 
 const App = () => {
   return (
@@ -9,6 +10,6 @@ const App = () => {
       <Home />
     </>
   );
-}
+};
 
 export default App;
