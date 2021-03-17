@@ -98,4 +98,5 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   padding: 15px 35px;
+  cursor: pointer;
 `;

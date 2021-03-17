@@ -1,5 +1,5 @@
+import App from './App';
 import { render } from 'react-dom';
-import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom';
 
 render(
@@ -8,7 +8,3 @@ render(
   </Router>,
   document.getElementById('root')
 );
-
-
-
-
