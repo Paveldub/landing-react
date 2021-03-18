@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { FaTimes } from 'react-icons/fa';
-import { Link as LinkScroll } from 'react-scroll';
-import { Link as LinkRouter } from 'react-router-dom';
+import styled from "@emotion/styled";
+import { FaTimes } from "react-icons/fa";
+import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -13,9 +13,9 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   align-items: center;
-  transition: .3s ease-in-out;
-  top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  transition: 0.3s ease-in-out;
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: 999;
 `;
 
@@ -35,7 +35,7 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
   color: #fff;
-`
+`;
 
 export const SidebarLink = styled(LinkScroll)`
   display: flex;
@@ -44,21 +44,21 @@ export const SidebarLink = styled(LinkScroll)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 
   &:hover {
     color: #01bf71;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
-`
+`;
 
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 export const SidebarRoute = styled(LinkRouter)`
   color: #fff;
@@ -70,14 +70,14 @@ export const SidebarRoute = styled(LinkRouter)`
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: #fff;
   }
-`
+`;
 
 export const SidebarMenu = styled.ul`
   display: grid;

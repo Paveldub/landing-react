@@ -16,27 +16,54 @@ import {
 
 import { Button } from "../Common/Button/Button.styles";
 
-export const InfoSection = () => {
+export const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  headline,
+  description,
+  lightText,
+  darkText,
+  buttonLabel,
+  img,
+  primary,
+  big,
+  lightTextDesc,
+  alt,
+  dark,
+  dark2,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Top Line</TopLine>
-                <Heading>HEading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine lightTextDesc={lightTextDesc}>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button primary={true} big={true} to="home">
-                    Button
+                  <Button
+                    to="home"
+                    smooth={true}
+                    spy={true}
+                    exact={true}
+                    duration={500}
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
