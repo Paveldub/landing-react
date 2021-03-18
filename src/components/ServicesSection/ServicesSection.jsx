@@ -7,6 +7,7 @@ import {
   SerivcesIcon,
   ServicesH2,
   ServicesP,
+  ServicesTextWrapper,
 } from "./ServicesSection.styles";
 
 import Icon1 from "../../images/svg-1.svg";
@@ -22,20 +23,26 @@ export const ServicesSection = () => {
         <ServicesWrapper>
           <ServicesCard>
             <SerivcesIcon src={Icon1} />
-            <ServicesH2>Reduce expenses</ServicesH2>
-            <ServicesP>We will help you to achieve your milestones</ServicesP>
+            <ServicesTextWrapper>
+              <ServicesH2>Reduce expenses</ServicesH2>
+              <ServicesP>We will help you to achieve your milestones</ServicesP>
+            </ServicesTextWrapper>
           </ServicesCard>
 
           <ServicesCard>
             <SerivcesIcon src={Icon2} />
-            <ServicesH2>Reduce expenses</ServicesH2>
-            <ServicesP>We will help you to achieve your milestones</ServicesP>
+            <ServicesTextWrapper>
+              <ServicesH2>Reduce expenses</ServicesH2>
+              <ServicesP>We will help you to achieve your milestones</ServicesP>
+            </ServicesTextWrapper>
           </ServicesCard>
 
           <ServicesCard>
             <SerivcesIcon src={Icon3} />
-            <ServicesH2>Reduce expenses</ServicesH2>
-            <ServicesP>We will help you to achieve your milestones</ServicesP>
+            <ServicesTextWrapper>
+              <ServicesH2>Reduce expenses</ServicesH2>
+              <ServicesP>We will help you to achieve your milestones</ServicesP>
+            </ServicesTextWrapper>
           </ServicesCard>
         </ServicesWrapper>
       </ServiceContainer>
