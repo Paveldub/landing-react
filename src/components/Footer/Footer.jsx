@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
   FooterContainer,
@@ -17,6 +18,10 @@ import {
 } from "./Footer.styles.jsx";
 
 export const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <FooterContainer>
@@ -62,7 +67,9 @@ export const Footer = () => {
 
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/">dolla</SocialLogo>
+              <SocialLogo to="/" onClick={toggleHome}>
+                dolla
+              </SocialLogo>
               <FooterLink>
                 (C) {new Date().getFullYear()} All right reserved
               </FooterLink>
