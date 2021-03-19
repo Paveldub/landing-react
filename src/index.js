@@ -1,10 +1,12 @@
 import App from "./App";
 import { render } from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 render(
   <Router>
-    <App />
+    <Switch>
+      <App />
+    </Switch>
   </Router>,
   document.getElementById("root")
 );
