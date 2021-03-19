@@ -31,6 +31,10 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+
+  @media screen and (max-width: 480px) {
+    right: 5.5rem;
+  }
 `;
 
 export const SidebarWrapper = styled.div`
@@ -82,10 +86,11 @@ export const SidebarRoute = styled(LinkRouter)`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(4, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-tempalte: repeat(6, 80px);
+    grid-template-rows: repeat(4, 80px);
+    padding: 0;
   }
 `;
