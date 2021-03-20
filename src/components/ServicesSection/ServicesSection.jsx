@@ -17,7 +17,7 @@ import Icon3 from "../../images/svg-3.svg";
 export const ServicesSection = () => {
   return (
     <>
-      <ServiceContainer id="services">
+      <ServiceContainer id="signup">
         <ServicesH1>Technologies</ServicesH1>
 
         <ServicesWrapper>

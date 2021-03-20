@@ -1,10 +1,13 @@
 {
+  "homepage": "http://Paveldub.github.io/landing-react",
   "private": "true",
   "scripts": {
     "start": "webpack serve --hot --open",
     "watch": "webpack --watch",
     "build": "NODE_ENV=production webpack",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "resolutions": {
     "styled-components": "^5"
